@@ -1,16 +1,16 @@
 {
-  "type": "ywzj_vehicle:fixed_wing_vehicle",
-  "model": "ashvehicle_ywzj:entity/f-18",
-  "texture": "ashvehicle_ywzj:textures/entity/f-18.png",
-  "slot_texture": "ashvehicle_ywzj:textures/slot/f-18.png",
-  "animations": "ashvehicle_ywzj:entity/f-18.animation",
-  "animation_controller": "ashvehicle_ywzj:f-18_controller",
-  "sounds": {
-    "engine_start": "ywzj_vehicle:jet_engine_start",
-    "engine_stop": "ywzj_vehicle:jet_engine_stop",
-    "engine_run": "ywzj_vehicle:jet_engine_run",
-    "engine_thrust": "ywzj_vehicle:jet_engine_thrust",
-    "passby": "ywzj_vehicle:jet_passby"
-  },
-  "tab_index": 1303
+	"type": "ywzj_vehicle:fixed_wing_vehicle",
+	"model": "ashvehicle_ywzj:entity/f-18",
+	"texture": "ashvehicle_ywzj:textures/entity/f-18.png",
+	"slot_texture": "ashvehicle_ywzj:textures/slot/f-18.png",
+	"animations": "ashvehicle_ywzj:entity/f-18.animation",
+	"animation_controller": "ashvehicle_ywzj:f-18_controller",
+	"sounds": {
+		"engine_start": "ywzj_vehicle:jet_engine_start",
+		"engine_stop": "ywzj_vehicle:jet_engine_stop",
+		"engine_run": "ywzj_vehicle:jet_engine_run",
+		"engine_thrust": "ywzj_vehicle:jet_engine_thrust",
+		"passby": "ywzj_vehicle:jet_passby"
+	},
+	"tab_index": 1303
 }

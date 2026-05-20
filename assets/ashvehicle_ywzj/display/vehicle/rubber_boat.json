@@ -1,9 +1,9 @@
 {
-  "type": "ywzj_vehicle:generic",
-  "model": "ashvehicle_ywzj:entity/rubber_boat",
-  "texture": "ashvehicle_ywzj:textures/entity/rubber_boat.png",
-  "slot_texture": "ashvehicle_ywzj:textures/slot/rubber_boat.png",
-  "animations": "ashvehicle_ywzj:entity/rubber_boat.animation",
-  "animation_controller": "ashvehicle_ywzj:rubber_boat_controller",
-  "tab_index": 1401
+	"type": "ywzj_vehicle:generic",
+	"model": "ashvehicle_ywzj:entity/rubber_boat",
+	"texture": "ashvehicle_ywzj:textures/entity/rubber_boat.png",
+	"slot_texture": "ashvehicle_ywzj:textures/slot/rubber_boat.png",
+	"animations": "ashvehicle_ywzj:entity/rubber_boat.animation",
+	"animation_controller": "ashvehicle_ywzj:rubber_boat_controller",
+	"tab_index": 1401
 }

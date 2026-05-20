@@ -1,14 +1,14 @@
 {
-  "type": "ywzj_vehicle:tracked_vehicle",
-  "model": "ashvehicle_ywzj:entity/sapsan-grim2",
-  "texture": "ashvehicle_ywzj:textures/entity/sapsan-grim2.png",
-  "slot_texture": "ashvehicle_ywzj:textures/slot/sapsan-grim2.png",
-  "animations": "ashvehicle_ywzj:entity/sapsan-grim2.animation",
-  "animation_controller": "ashvehicle_ywzj:sapsan-grim2_controller",
-  "sounds": {
-    "engine_start": "ywzj_vehicle:ztz99a_engine_start",
-    "engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
-    "engine_run": "ywzj_vehicle:ztz99a_engine_run"
-  },
-  "tab_index": 1005
+	"type": "ywzj_vehicle:tracked_vehicle",
+	"model": "ashvehicle_ywzj:entity/sapsan-grim2",
+	"texture": "ashvehicle_ywzj:textures/entity/sapsan-grim2.png",
+	"slot_texture": "ashvehicle_ywzj:textures/slot/sapsan-grim2.png",
+	"animations": "ashvehicle_ywzj:entity/sapsan-grim2.animation",
+	"animation_controller": "ashvehicle_ywzj:sapsan-grim2_controller",
+	"sounds": {
+		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
+		"engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+		"engine_run": "ywzj_vehicle:ztz99a_engine_run"
+	},
+	"tab_index": 1005
 }

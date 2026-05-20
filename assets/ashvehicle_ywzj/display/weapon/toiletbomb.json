@@ -1,9 +1,9 @@
 {
-  "type": "ywzj_vehicle:weapon",
-  "model": "ashvehicle_ywzj:entity/toiletbomb",
-  "texture": "ashvehicle_ywzj:textures/entity/toiletbomb.png",
-  "sounds": {
-    "fire": "ywzj_vehicle:bomb_drop",
-    "reload": "ywzj_vehicle:gun_reload"
-  }
+	"type": "ywzj_vehicle:weapon",
+	"model": "ashvehicle_ywzj:entity/toiletbomb",
+	"texture": "ashvehicle_ywzj:textures/entity/toiletbomb.png",
+	"sounds": {
+		"fire": "ywzj_vehicle:bomb_drop",
+		"reload": "ywzj_vehicle:gun_reload"
+	}
 }

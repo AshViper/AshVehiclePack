@@ -1,31 +1,31 @@
 {
-  "name": "pa_pantsir_controller",
-  "script": "ashvehicle_ywzj:pa_pantsir",
-  "parameters": {},
-  "event_animations": {},
-  "loop_animations": {
-    "static": {
-      "animation": "static"
-    }
-  },
-  "graph": {
-    "type": "merge",
-    "inputs": [
-      {
-        "type": "loop_animation",
-        "ref": "static"
-      },
-      {
-        "type": "additive",
-        "base": {
-          "type": "bone_binding",
-          "special_bindings": [],
-          "part_bindings": []
-        },
-        "add": {
-          "type": "event_animation"
-        }
-      }
-    ]
-  }
+	"name": "pa_pantsir_controller",
+	"script": "ashvehicle_ywzj:pa_pantsir",
+	"parameters": {},
+	"event_animations": {},
+	"loop_animations": {
+		"static": {
+			"animation": "static"
+		}
+	},
+	"graph": {
+		"type": "merge",
+		"inputs": [
+			{
+				"type": "loop_animation",
+				"ref": "static"
+			},
+			{
+				"type": "additive",
+				"base": {
+					"type": "bone_binding",
+					"special_bindings": [],
+					"part_bindings": []
+				},
+				"add": {
+					"type": "event_animation"
+				}
+			}
+		]
+	}
 }

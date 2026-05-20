@@ -1,9 +1,9 @@
 {
-  "name": "mh_60m_controller",
-  "script": "ashvehicle_ywzj:mh_60m",
-  "parameters": {},
-  "graph": {
-    "type": "script",
-    "function": "updateBones"
-  }
+	"name": "mh_60m_controller",
+	"script": "ashvehicle_ywzj:mh_60m",
+	"parameters": {},
+	"graph": {
+		"type": "script",
+		"function": "updateBones"
+	}
 }
