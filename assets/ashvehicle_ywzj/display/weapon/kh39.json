@@ -1,0 +1,9 @@
+{
+  "type": "ywzj_vehicle:weapon",
+  "model": "ashvehicle_ywzj:entity/kh39",
+  "texture": "ashvehicle_ywzj:textures/entity/kh39.png",
+  "sounds": {
+    "fire": "ywzj_vehicle:missile_launch",
+    "reload": "ywzj_vehicle:common_reload"
+  }
+}

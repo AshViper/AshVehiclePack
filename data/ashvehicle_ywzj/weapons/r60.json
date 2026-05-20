@@ -1,0 +1,33 @@
+{
+  "type": "ywzj_vehicle:missile",
+  "name": "R-60 Aphid",
+  "damage": 1100,
+  "headshot_multiplier": 1.5,
+  "shoot_interval": 800,
+  "max_capacity": 4,
+  "reload": {
+    "time": 200,
+    "ammo": "ywzj_vehicle:ammo_missile"
+  },
+  "x_rot_max": 90,
+  "x_rot_min": -90,
+  "y_rot_max": 90,
+  "y_rot_min": -90,
+  "explosion": {
+    "explode": true,
+    "damage": 180,
+    "radius": 12,
+    "proximity_fuze": true,
+    "proximity_radius": 4,
+    "destroy_block": true
+  },
+  "seeker_fov": 20,
+  "mass": 0.006,
+  "thrust": 0.025,
+  "motor_burn_time": 150,
+  "drag_coefficient": 0.005,
+  "max_g": 35,
+  "reference_speed": 1,
+  "guidance": "HOMING",
+  "homing_mode": "IR"
+}

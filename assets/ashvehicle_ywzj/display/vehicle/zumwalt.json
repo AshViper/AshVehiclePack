@@ -1,0 +1,9 @@
+{
+  "type": "ywzj_vehicle:generic",
+  "model": "ashvehicle_ywzj:entity/zumwalt",
+  "texture": "ashvehicle_ywzj:textures/entity/zumwalt.png",
+  "slot_texture": "ashvehicle_ywzj:textures/slot/zumwalt.png",
+  "animations": "ashvehicle_ywzj:entity/zumwalt.animation",
+  "animation_controller": "ashvehicle_ywzj:zumwalt_controller",
+  "tab_index": 1403
+}

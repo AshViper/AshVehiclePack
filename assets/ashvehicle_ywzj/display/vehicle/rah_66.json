@@ -1,0 +1,14 @@
+{
+  "type": "ywzj_vehicle:rotary_wing_vehicle",
+  "model": "ashvehicle_ywzj:entity/rah_66",
+  "texture": "ashvehicle_ywzj:textures/entity/rah_66.png",
+  "slot_texture": "ashvehicle_ywzj:textures/slot/rah_66.png",
+  "animations": "ashvehicle_ywzj:entity/rah_66.animation",
+  "animation_controller": "ashvehicle_ywzj:rah_66_controller",
+  "sounds": {
+    "engine_start": "ywzj_vehicle:z10_engine_start",
+    "engine_stop": "ywzj_vehicle:z10_engine_stop",
+    "engine_run": "ywzj_vehicle:z10_engine_run"
+  },
+  "tab_index": 1202
+}

@@ -1,0 +1,14 @@
+{
+  "type": "ywzj_vehicle:tracked_vehicle",
+  "model": "ashvehicle_ywzj:entity/m1a1abrams",
+  "texture": "ashvehicle_ywzj:textures/entity/m1a1abrams.png",
+  "slot_texture": "ashvehicle_ywzj:textures/slot/m1a1abrams.png",
+  "animations": "ashvehicle_ywzj:entity/m1a1abrams.animation",
+  "animation_controller": "ashvehicle_ywzj:m1a1abrams_controller",
+  "sounds": {
+    "engine_start": "ywzj_vehicle:ztz99a_engine_start",
+    "engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+    "engine_run": "ywzj_vehicle:ztz99a_engine_run"
+  },
+  "tab_index": 1002
+}

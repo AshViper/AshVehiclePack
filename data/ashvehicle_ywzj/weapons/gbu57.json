@@ -1,0 +1,19 @@
+{
+  "type": "ywzj_vehicle:aerial_bomb",
+  "name": "GBU-57 MOP",
+  "damage": 10,
+  "velocity": 0,
+  "recoil": 0,
+  "shoot_interval": 400,
+  "max_capacity": 2,
+  "reload": {
+    "time": 300,
+    "ammo": "ywzj_vehicle:ammo_aerial_bomb"
+  },
+  "explosion": {
+    "explode": true,
+    "damage": 256,
+    "radius": 30,
+    "destroy_block": true
+  }
+}

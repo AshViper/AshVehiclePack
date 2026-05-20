@@ -1,0 +1,11 @@
+{
+  "namespace": "ashvehicle_ywzj",
+  "title": "AshVehicle",
+  "description": "It is an addon based on Limitless Vehicle",
+  "version": "1.0.0",
+  "date": "2026-01-01",
+  "license": "All Rights Reserved",
+  "authors": ["Arusan", "YWZJ"],
+  "url": "",
+  "dependencies": {}
+}

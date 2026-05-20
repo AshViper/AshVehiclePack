@@ -1,0 +1,33 @@
+{
+  "type": "ywzj_vehicle:missile",
+  "name": "AGM-65 Maverick",
+  "damage": 1100,
+  "headshot_multiplier": 1.5,
+  "shoot_interval": 1000,
+  "max_capacity": 4,
+  "reload": {
+    "time": 260,
+    "ammo": "ywzj_vehicle:ammo_missile"
+  },
+  "x_rot_max": 90,
+  "x_rot_min": -90,
+  "y_rot_max": 90,
+  "y_rot_min": -90,
+  "explosion": {
+    "explode": true,
+    "damage": 180,
+    "radius": 12,
+    "proximity_fuze": true,
+    "proximity_radius": 4,
+    "destroy_block": true
+  },
+  "seeker_fov": 20,
+  "mass": 0.02,
+  "thrust": 0.015,
+  "motor_burn_time": 300,
+  "drag_coefficient": 0.005,
+  "max_g": 15,
+  "reference_speed": 1,
+  "guidance": "HOMING",
+  "homing_mode": "EO"
+}

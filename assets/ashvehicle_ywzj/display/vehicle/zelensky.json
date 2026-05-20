@@ -1,0 +1,9 @@
+{
+  "type": "ywzj_vehicle:generic",
+  "model": "ashvehicle_ywzj:entity/zelensky",
+  "texture": "ashvehicle_ywzj:textures/entity/zelensky.png",
+  "slot_texture": "ashvehicle_ywzj:textures/slot/zelensky.png",
+  "animations": "ashvehicle_ywzj:entity/zelensky.animation",
+  "animation_controller": "ashvehicle_ywzj:zelensky_controller",
+  "tab_index": 1402
+}

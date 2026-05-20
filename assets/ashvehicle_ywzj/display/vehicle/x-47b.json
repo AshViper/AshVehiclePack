@@ -1,0 +1,16 @@
+{
+  "type": "ywzj_vehicle:fixed_wing_vehicle",
+  "model": "ashvehicle_ywzj:entity/x-47b",
+  "texture": "ashvehicle_ywzj:textures/entity/x-47b.png",
+  "slot_texture": "ashvehicle_ywzj:textures/slot/x-47b.png",
+  "animations": "ashvehicle_ywzj:entity/x-47b.animation",
+  "animation_controller": "ashvehicle_ywzj:x-47b_controller",
+  "sounds": {
+    "engine_start": "ywzj_vehicle:jet_engine_start",
+    "engine_stop": "ywzj_vehicle:jet_engine_stop",
+    "engine_run": "ywzj_vehicle:jet_engine_run",
+    "engine_thrust": "ywzj_vehicle:jet_engine_thrust",
+    "passby": "ywzj_vehicle:jet_passby"
+  },
+  "tab_index": 1325
+}

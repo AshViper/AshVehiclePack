@@ -1,0 +1,33 @@
+{
+  "type": "ywzj_vehicle:missile",
+  "name": "AIM-54 Phoenix",
+  "damage": 1100,
+  "headshot_multiplier": 1.5,
+  "shoot_interval": 1200,
+  "max_capacity": 4,
+  "reload": {
+    "time": 300,
+    "ammo": "ywzj_vehicle:ammo_missile"
+  },
+  "x_rot_max": 90,
+  "x_rot_min": -90,
+  "y_rot_max": 90,
+  "y_rot_min": -90,
+  "explosion": {
+    "explode": true,
+    "damage": 180,
+    "radius": 12,
+    "proximity_fuze": true,
+    "proximity_radius": 5,
+    "destroy_block": true
+  },
+  "seeker_fov": 20,
+  "mass": 0.04,
+  "thrust": 0.03,
+  "motor_burn_time": 600,
+  "drag_coefficient": 0.003,
+  "max_g": 20,
+  "reference_speed": 1,
+  "guidance": "HOMING",
+  "homing_mode": "ACTIVE_RADAR"
+}
