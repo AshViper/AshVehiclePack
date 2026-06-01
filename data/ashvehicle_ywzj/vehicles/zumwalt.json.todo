@@ -9,7 +9,7 @@
 	},
 	"energy_info": {
 		"energy_capacity": 1,
-		"energy_consumption_per_tick": 1e-05
+		"energy_consumption_per_tick": 0.00001
 	},
 	"structure_model": "ashvehicle_ywzj:vehicle/zumwalt",
 	"parts": [],

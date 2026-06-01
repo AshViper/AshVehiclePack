@@ -3,30 +3,33 @@
 	"attributes": {
 		"main_rotor_force": 0.042,
 		"ceiling": 256,
-		"x_rot_speed_acceleration": 1.0,
-		"x_rot_speed_max": 3.0,
-		"y_rot_speed_acceleration": 1.0,
-		"y_rot_speed_max": 3.0,
-		"z_rot_speed_acceleration": 1.0,
-		"z_rot_speed_max": 3.0,
+		"x_rot_speed_acceleration": 1,
+		"x_rot_speed_max": 3,
+		"y_rot_speed_acceleration": 1,
+		"y_rot_speed_max": 3,
+		"z_rot_speed_acceleration": 1,
+		"z_rot_speed_max": 3,
 		"max_air_speed": 1.8
 	},
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 1000,
 	"view_info": {
 		"third_person_center_offset": [0, 6, 0],
-		"third_person_distance": 14,
+		"third_person_distance": 18,
 		"third_person_center_offset_zoomed": [0, 7, 0],
 		"third_person_distance_zoomed": 0,
 		"sound_distance": 8
 	},
 	"energy_info": {
 		"energy_capacity": 0.25,
-		"energy_consumption_per_tick": 1e-05
+		"energy_consumption_per_tick": 0.3
 	},
 	"defense_stats": {
 		"damage_threshold": 10,
 		"impact_multiplier": 0.2
+	},
+	"physics_info": {
+		"radar_cross_section": 0.001
 	},
 	"structure_model": "ashvehicle_ywzj:vehicle/rah_66",
 	"parts": [
@@ -35,24 +38,32 @@
 			"name": "sighting_system",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "sighting_system",
-			"seat_offset": [0, 2.2, 2.4],
+			"seat_offset": [0, 2.3, 3.2],
 			"operator_on_weapon_unit": false,
 			"rot_info": {
 				"x_rot_speed": 3,
 				"y_rot_speed": 3,
 				"x_rot_max": 45,
 				"x_rot_min": -13,
-				"y_rot_max": 60,
-				"y_rot_min": -60
+				"y_rot_max": 90,
+				"y_rot_min": -90
 			},
-			"optical_sight_offset": [-0.1, 0, 0.01],
-			"operator_view_offset": [-0.1, 1.1, -3],
+			"optical_sight_offset": [0, 0, 0],
+			"operator_view_offset": [0, 1.5, -2.5],
 			"optical_sight_type": "crt",
-			"zoom_max": 8,
+			"with_stabilizer": true,
+			"with_focus_locker": true,
+			"with_thermal_imager": true,
+			"zoom_max": 16,
 			"weapons": [
 				{
-					"id": "ywzj_vehicle:rocket",
-					"part_unit_id": "rocket"
+					"id": "ywzj_vehicle:auto_cannon",
+					"part_unit_id": "auto_cannon"
+				},
+				{
+					"id": "ashvehicle_ywzj:agm114",
+					"part_unit_id": "missile",
+					"weapon_bay_unit_id": "weapon_bay"
 				},
 				{
 					"id": "ywzj_vehicle:decoy_flare",
@@ -61,12 +72,31 @@
 			]
 		},
 		{
-			"id": "rocket",
-			"name": "rocket",
+			"id": "auto_cannon",
+			"name": "auto_cannon",
 			"type": "ywzj_vehicle:weapon",
-			"structure_bone": "rocket",
+			"structure_bone": "auto_cannon",
+			"ammo_capacity": 200,
 			"is_seat": false,
-			"crosshair_style": "reticle",
+			"crosshair_style": "circle",
+			"rot_info": {
+				"x_rot_speed": 3,
+				"y_rot_speed": 3,
+				"x_rot_max": 45,
+				"x_rot_min": -5,
+				"y_rot_max": 90,
+				"y_rot_min": -90
+			}
+		},
+		{
+			"id": "missile",
+			"name": "missile",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "missile",
+			"ammo_capacity": 6,
+			"is_seat": false,
+			"parent_weapon_unit_aim": true,
+			"crosshair_style": "none",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
@@ -86,10 +116,17 @@
 			}
 		},
 		{
-			"id": "door",
-			"name": "door",
-			"type": "ywzj_vehicle:door",
-			"structure_bone": "door",
+			"id": "seat",
+			"name": "seat",
+			"type": "ywzj_vehicle:generic",
+			"seat_offset": [0, 2.5, 2],
+			"owner_view_offset": [0, 2.5, 2]
+		},
+		{
+			"id": "weapon_bay",
+			"name": "weapon_bay",
+			"type": "ywzj_vehicle:weapon_bay",
+			"structure_bone": "weapon_bay",
 			"is_seat": false
 		},
 		{
@@ -99,6 +136,5 @@
 			"structure_bone": "landing_gear",
 			"is_seat": false
 		}
-	],
-	"experimental": true
+	]
 }

@@ -21,12 +21,11 @@
 		"proximity_radius": 2,
 		"destroy_block": true
 	},
-	"seeker_fov": 20,
-	"mass": 0.005,
-	"thrust": 0.02,
-	"motor_burn_time": 150,
+	"mass": 0.05,
+	"thrust": 0.03,
+	"motor_burn_time": 600,
 	"drag_coefficient": 0.005,
-	"max_g": 15,
+	"max_g": 18,
 	"reference_speed": 3,
 	"guidance": "SACLOS"
 }

@@ -1,1 +1,18 @@
-{}
+{
+  "missile_start_med": {
+    "sounds": [
+      "ashvehicle_ywzj:weapon/missile/missile_start_med_001",
+      "ashvehicle_ywzj:weapon/missile/missile_start_med_002",
+      "ashvehicle_ywzj:weapon/missile/missile_start_med_003"
+    ],
+    "subtitle": "ashvehicle_ywzj.sounds.missile_start_med"
+  },
+  "gsh_30_1_shot": {
+    "sounds": [
+      "ashvehicle_ywzj:weapon/auto_cannon/gsh_30_1_001",
+      "ashvehicle_ywzj:weapon/auto_cannon/gsh_30_1_002",
+      "ashvehicle_ywzj:weapon/auto_cannon/gsh_30_1_003"
+    ],
+    "subtitle": "ashvehicle_ywzj.sounds.gsh_30_1_shot"
+  }
+}

@@ -4,7 +4,7 @@
 	"texture": "ashvehicle_ywzj:textures/entity/fa18e.png",
 	"slot_texture": "ashvehicle_ywzj:textures/slot/f-18.png",
 	"animations": "ashvehicle_ywzj:entity/fa18e.animation",
-	"animation_controller": "ash:fa18e_controller",
+	"animation_controller": "ashvehicle_ywzj:fa18e_controller",
 	"sounds": {
 		"engine_start": "ywzj_vehicle:jet_engine_start",
 		"engine_stop": "ywzj_vehicle:jet_engine_stop",

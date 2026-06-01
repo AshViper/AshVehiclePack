@@ -3,12 +3,12 @@
 	"attributes": {
 		"main_rotor_force": 0.042,
 		"ceiling": 256,
-		"x_rot_speed_acceleration": 1.0,
-		"x_rot_speed_max": 3.0,
-		"y_rot_speed_acceleration": 1.0,
-		"y_rot_speed_max": 3.0,
-		"z_rot_speed_acceleration": 1.0,
-		"z_rot_speed_max": 3.0,
+		"x_rot_speed_acceleration": 1,
+		"x_rot_speed_max": 3,
+		"y_rot_speed_acceleration": 1,
+		"y_rot_speed_max": 3,
+		"z_rot_speed_acceleration": 1,
+		"z_rot_speed_max": 3,
 		"max_air_speed": 1.8
 	},
 	"landing_gear_part_id": "landing_gear",
@@ -22,7 +22,7 @@
 	},
 	"energy_info": {
 		"energy_capacity": 0.25,
-		"energy_consumption_per_tick": 1e-05
+		"energy_consumption_per_tick": 0.00001
 	},
 	"defense_stats": {
 		"damage_threshold": 10,

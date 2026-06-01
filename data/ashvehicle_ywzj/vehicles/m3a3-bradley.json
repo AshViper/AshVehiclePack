@@ -9,15 +9,15 @@
 		"turn_acceleration": 1,
 		"max_turn": 2
 	},
-	"max_health": 2500,
+	"max_health": 1500,
 	"view_info": {
 		"third_person_center_offset": [0, 3, 0],
-		"third_person_distance": 7,
+		"third_person_distance": 10,
 		"sound_distance": 7
 	},
 	"energy_info": {
 		"energy_capacity": 1,
-		"energy_consumption_per_tick": 1e-05
+		"energy_consumption_per_tick": 0.00001
 	},
 	"physics_info": {
 		"can_destroy_block": true
@@ -29,30 +29,98 @@
 			"name": "turret",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "turret",
-			"seat_offset": [-0.5, 1.5, -1],
+			"seat_offset": [-0.5, 2, -1],
 			"rot_info": {
-				"x_rot_speed": 1.2,
-				"y_rot_speed": 1.2,
-				"x_rot_max": 5,
-				"x_rot_min": -13
+				"x_rot_speed": 4,
+				"y_rot_speed": 4,
+				"x_rot_max": 9,
+				"x_rot_min": -59
 			},
 			"optical_sight_offset": [0.6, 1.3, 0.24],
 			"operator_view_offset": [0, 1.5, 0],
 			"fire_control_lock_type": "aim_hit",
 			"optical_sight_type": "crt",
-			"with_stabilizer": false,
-			"with_thermal_imager": false,
+			"with_stabilizer": true,
+			"with_thermal_imager": true,
 			"zoom_max": 6,
 			"weapons": [
-				"ywzj_vehicle:cannon_125mm"
+				"ywzj_vehicle:auto_cannon",
+				{
+					"id": "ywzj_vehicle:gun_7.62mm",
+					"part_unit_id": "turret_machine_gun",
+					"secondary": true
+				},
+				{
+					"id": "ywzj_vehicle:tow",
+					"part_unit_id": "tow"
+				}
 			]
 		},
 		{
-			"id": "seat",
+			"id": "turret_machine_gun",
+			"name": "turret_machine_gun",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "turret_machine_gun",
+			"is_seat": false,
+			"rot_info": {
+				"x_rot_speed": 4,
+				"y_rot_speed": 4,
+				"x_rot_max": 9,
+				"x_rot_min": -59
+			}
+		},
+		{
+			"id": "tow",
+			"name": "tow",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "tow",
+			"ammo_capacity": 2,
+			"fire_control_sensor_type": "eo",
+			"is_seat": false,
+			"parent_weapon_unit_aim": true,
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			}
+		},
+		{
+			"id": "seat1",
 			"name": "seat",
 			"type": "ywzj_vehicle:generic",
-			"seat_offset": [0, 1.3, 1.7]
+			"seat_offset": [0.7, 2, -2.65],
+			"owner_view_offset": [0.7, 2, -2.65],
+			"seat_rot": 90
+		},
+		{
+			"id": "seat2",
+			"name": "seat",
+			"type": "ywzj_vehicle:generic",
+			"seat_offset": [0.7, 2, -3.35],
+			"owner_view_offset": [0.7, 2, -3.35],
+			"seat_rot": 90
+		},
+		{
+			"id": "seat3",
+			"name": "seat",
+			"type": "ywzj_vehicle:generic",
+			"seat_offset": [-0.7, 2, -2.65],
+			"owner_view_offset": [0.7, 2, -2.65],
+			"seat_rot": -90
+		},
+		{
+			"id": "seat4",
+			"name": "seat",
+			"type": "ywzj_vehicle:generic",
+			"seat_offset": [-0.7, 2, -3.35],
+			"owner_view_offset": [0.7, 2, -3.35],
+			"seat_rot": -90
+		},
+		{
+			"id": "door",
+			"name": "door",
+			"type": "ywzj_vehicle:door",
+			"structure_bone": "door",
+			"is_seat": false
 		}
-	],
-	"experimental": true
+	]
 }

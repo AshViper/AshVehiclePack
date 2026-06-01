@@ -17,12 +17,12 @@
 	},
 	"energy_info": {
 		"energy_capacity": 1,
-		"energy_consumption_per_tick": 1e-05
+		"energy_consumption_per_tick": 0.00001
 	},
 	"physics_info": {
 		"can_destroy_block": true
 	},
-	"structure_model": "ashvehicle_ywzj:vehicle/m1a1abrams",
+	"structure_model": "ashvehicle_ywzj:vehicle/strv103",
 	"parts": [
 		{
 			"id": "turret",
@@ -43,9 +43,7 @@
 			"with_stabilizer": false,
 			"with_thermal_imager": false,
 			"zoom_max": 6,
-			"weapons": [
-				"ywzj_vehicle:cannon_125mm"
-			]
+			"weapons": ["ywzj_vehicle:cannon_125mm"]
 		},
 		{
 			"id": "seat",

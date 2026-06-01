@@ -3,6 +3,7 @@
 	"model": "ashvehicle_ywzj:entity/mh_60m",
 	"texture": "ashvehicle_ywzj:textures/entity/mh_60m.png",
 	"slot_texture": "ashvehicle_ywzj:textures/slot/uh_60.png",
+	"animations": "ashvehicle_ywzj:entity/mh_60m.animation",
 	"animation_controller": "ashvehicle_ywzj:mh_60m_controller",
 	"sounds": {
 		"engine_start": "ywzj_vehicle:z10_engine_start",

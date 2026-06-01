@@ -1,6 +1,6 @@
 {
 	"type": "ywzj_vehicle:missile",
-	"name": "AIM-9 Sidewinder",
+	"name": "AIM-9",
 	"damage": 1100,
 	"headshot_multiplier": 1.5,
 	"shoot_interval": 1000,
@@ -21,13 +21,13 @@
 		"proximity_radius": 4,
 		"destroy_block": true
 	},
-	"seeker_fov": 20,
-	"mass": 0.008,
-	"thrust": 0.025,
-	"motor_burn_time": 200,
+	"seeker_fov": 30,
+	"mass": 0.01,
+	"thrust": 0.01,
+	"motor_burn_time": 60,
 	"drag_coefficient": 0.005,
-	"max_g": 35,
+	"max_g": 30,
 	"reference_speed": 1,
 	"guidance": "HOMING",
-	"homing_mode": "IR"
+	"homing_mode": "INFRARED"
 }

@@ -3,32 +3,67 @@
 	"script": "ashvehicle_ywzj:m3a3-bradley",
 	"parameters": {},
 	"event_animations": {
-		"turret_fire": ["barrel_shoot"]
+		"turret_fire": ["turret_shoot"]
 	},
-	"loop_animations": {
-		"static": {
-			"animation": "static"
+	"switchable_animations": {
+		"door": {
+			"part_id": "door",
+			"animation": "door"
 		}
 	},
 	"graph": {
 		"type": "merge",
 		"inputs": [
 			{
-				"type": "loop_animation",
-				"ref": "static"
-			},
-			{
 				"type": "additive",
 				"base": {
-					"type": "bone_binding",
-					"special_bindings": [],
-					"part_bindings": [
+					"type": "merge",
+					"inputs": [
 						{
-							"bone": "barrel",
-							"part": "turret",
-							"rotation_type": "x",
-							"axis": "x",
-							"invert": false
+							"type": "bone_binding",
+							"special_bindings": [
+								{
+									"bones": [
+										"WHELL1", "WHELL2", "WHELL3", "WHELL4",
+										"WHELL5", "WHELL6", "WHELL7", "WHELL8"
+									],
+									"source": "left_wheel_rotation",
+									"axis": "x",
+									"param": -0.375
+								},
+								{
+									"bones": [
+										"WHELL9", "WHELL10", "WHELL11", "WHELL12",
+										"WHELL13", "WHELL14", "WHELL16", "WHELL17"
+									],
+									"source": "right_wheel_rotation",
+									"axis": "x",
+									"param": -0.375
+								}
+							],
+							"part_bindings": [
+								{
+									"bone": "cannon",
+									"part": "turret",
+									"rotation_type": "y",
+									"axis": "y",
+									"invert": true
+								},
+								{
+									"bone": "barrel",
+									"part": "turret",
+									"rotation_type": "x",
+									"axis": "x",
+									"invert": true
+								}
+							]
+						},
+						{
+							"type": "track_animation"
+						},
+						{
+							"type": "switchable_animation",
+							"ref": "door"
 						}
 					]
 				},

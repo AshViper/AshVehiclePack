@@ -1,9 +1,39 @@
 {
 	"name": "mh_60m_controller",
 	"script": "ashvehicle_ywzj:mh_60m",
-	"parameters": {},
+	"switchable_animations": {
+		"door_1": {
+			"part_id": "door_1",
+			"animation": "door_1"
+		},
+		"door_2": {
+			"part_id": "door_2",
+			"animation": "door_2"
+		},
+		"door_3": {
+			"part_id": "door_3",
+			"animation": "door_3"
+		}
+	},
 	"graph": {
-		"type": "script",
-		"function": "updateBones"
+		"type": "merge",
+		"inputs": [
+			{
+				"type": "switchable_animation",
+				"ref": "door_1"
+			},
+			{
+				"type": "switchable_animation",
+				"ref": "door_2"
+			},
+			{
+				"type": "switchable_animation",
+				"ref": "door_3"
+			},
+			{
+				"type": "script",
+				"function": "updateBones"
+			}
+		]
 	}
 }

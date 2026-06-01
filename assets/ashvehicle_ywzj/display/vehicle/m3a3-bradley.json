@@ -5,6 +5,12 @@
 	"slot_texture": "ashvehicle_ywzj:textures/slot/m3a3-bradley.png",
 	"animations": "ashvehicle_ywzj:entity/m3a3-bradley.animation",
 	"animation_controller": "ashvehicle_ywzj:m3a3-bradley_controller",
+	"track_config": {
+		"left_track": "tread_l_move",
+		"right_track": "tread_r_move",
+		"module_length": 0.25,
+		"track_width": 3.0
+	},
 	"sounds": {
 		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
 		"engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
