@@ -5,6 +5,13 @@
 	"slot_texture": "ashvehicle_ywzj:textures/slot/b-2.png",
 	"animations": "ashvehicle_ywzj:entity/b-2.animation",
 	"animation_controller": "ashvehicle_ywzj:b-2_controller",
+	"special_bone_effects": [
+		{
+			"bone": "windows",
+			"texture": "ashvehicle_ywzj:textures/entity/b-2.png",
+			"type": "transparent"
+		}
+	],
 	"sounds": {
 		"engine_start": "ywzj_vehicle:jet_engine_start",
 		"engine_stop": "ywzj_vehicle:jet_engine_stop",

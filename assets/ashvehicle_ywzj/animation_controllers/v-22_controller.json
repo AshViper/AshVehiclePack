@@ -1,37 +1,95 @@
 {
 	"name": "v-22_controller",
 	"script": "ashvehicle_ywzj:v-22",
-	"parameters": {},
-	"event_animations": {},
-	"loop_animations": {
-		"static": {
-			"animation": "static"
+	"switchable_animations": {
+		"landing_gear": {
+			"part_id": "landing_gear",
+			"animation": "landing_gear"
+		}
+	},
+	"state_machines": {
+		"variable_sweep_wing": {
+			"start_state": "init",
+			"states": {
+				"init": {
+					"on_enter": [
+						{
+							"type": "play_animation",
+							"animation": "highspeed_on",
+							"play_type": "play_once_hold",
+							"track": "highspeed_on"
+						},
+						{
+							"type": "play_animation",
+							"animation": "highspeed_off",
+							"play_type": "play_once_hold",
+							"track": "highspeed_off"
+						}
+					],
+					"transitions": [
+						{
+							"target": "highspeed_on",
+							"condition": {
+								"type": "script",
+								"script": "context.getSpeed() > 1.6"
+							},
+							"duration": 2
+						}
+					],
+					"evaluate": {
+						"type": "track",
+						"track": ""
+					}
+				},
+				"highspeed_off": {
+					"transitions": [
+						{
+							"target": "highspeed_on",
+							"condition": {
+								"type": "script",
+								"script": "context.getSpeed() > 1.6"
+							},
+							"duration": 2
+						}
+					],
+					"evaluate": {
+						"type": "track",
+						"track": "highspeed_off"
+					}
+				},
+				"highspeed_on": {
+					"transitions": [
+						{
+							"target": "highspeed_off",
+							"condition": {
+								"type": "script",
+								"script": "context.getSpeed() < 1.6"
+							},
+							"duration": 2
+						}
+					],
+					"evaluate": {
+						"type": "track",
+						"track": "highspeed_on"
+					}
+				}
+			}
 		}
 	},
 	"graph": {
 		"type": "merge",
 		"inputs": [
 			{
-				"type": "loop_animation",
-				"ref": "static"
+				"type": "switchable_animation",
+				"ref": "landing_gear"
 			},
 			{
-				"type": "additive",
-				"base": {
-					"type": "bone_binding",
-					"special_bindings": [
-						{
-							"bones": ["LeftPropeller", "RightPropeller"],
-							"source": "main_rotor_rotation",
-							"axis": "y",
-							"param": 10.0
-						}
-					],
-					"part_bindings": []
-				},
-				"add": {
-					"type": "event_animation"
-				}
+				"type": "state_machine",
+				"ref": "variable_sweep_wing"
+			},
+			{
+				"type": "script",
+				"function": "updateBones"
 			}
 		]
 	}

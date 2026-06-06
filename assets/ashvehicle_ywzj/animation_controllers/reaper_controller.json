@@ -1,30 +1,22 @@
 {
 	"name": "reaper_controller",
 	"script": "ashvehicle_ywzj:reaper",
-	"parameters": {},
-	"event_animations": {},
-	"loop_animations": {
-		"static": {
-			"animation": "static"
+	"switchable_animations": {
+		"landing_gear": {
+			"part_id": "landing_gear",
+			"animation": "landing_gear"
 		}
 	},
 	"graph": {
 		"type": "merge",
 		"inputs": [
 			{
-				"type": "loop_animation",
-				"ref": "static"
+				"type": "switchable_animation",
+				"ref": "landing_gear"
 			},
 			{
-				"type": "additive",
-				"base": {
-					"type": "bone_binding",
-					"special_bindings": [],
-					"part_bindings": []
-				},
-				"add": {
-					"type": "event_animation"
-				}
+				"type": "script",
+				"function": "updateBones"
 			}
 		]
 	}

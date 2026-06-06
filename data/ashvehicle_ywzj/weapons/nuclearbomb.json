@@ -10,10 +10,12 @@
 		"time": 400,
 		"ammo": "ywzj_vehicle:ammo_aerial_bomb"
 	},
+	"penetration_depth": 0,
+	"homing": true,
 	"explosion": {
 		"explode": true,
-		"damage": 15000,
-		"radius": 500,
+		"damage": 9999,
+		"radius": 128,
 		"destroy_block": true
 	}
 }

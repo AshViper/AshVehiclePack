@@ -7,9 +7,11 @@
 	"shoot_interval": 400,
 	"max_capacity": 2,
 	"reload": {
-		"time": 300,
+		"time": 100,
 		"ammo": "ywzj_vehicle:ammo_aerial_bomb"
 	},
+	"penetration_depth": 16,
+	"homing": true,
 	"explosion": {
 		"explode": true,
 		"damage": 256,
