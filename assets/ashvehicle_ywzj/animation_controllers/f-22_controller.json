@@ -1,7 +1,6 @@
 {
 	"name": "f-22_controller",
 	"script": "ashvehicle_ywzj:f-22",
-	"parameters": {},
 	"switchable_animations": {
 		"landing_gear": {
 			"part_id": "landing_gear",

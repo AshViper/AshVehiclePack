@@ -5,6 +5,7 @@
 	"slot_texture": "ashvehicle_ywzj:textures/slot/f35b.png",
 	"animations": "ashvehicle_ywzj:entity/f35b.animation",
 	"animation_controller": "ashvehicle_ywzj:f35b_controller",
+	"afterburner_model": "ashvehicle_ywzj:effect/afterburner_flame",
 	"sounds": {
 		"engine_start": "ywzj_vehicle:jet_engine_start",
 		"engine_stop": "ywzj_vehicle:jet_engine_stop",

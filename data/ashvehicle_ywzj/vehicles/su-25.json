@@ -24,7 +24,7 @@
 	"max_health": 500,
 	"view_info": {
 		"third_person_center_offset": [0, 6, 0],
-		"third_person_distance": 20,
+		"third_person_distance": 16,
 		"third_person_center_offset_zoomed": [0, 7, 0],
 		"third_person_distance_zoomed": 4,
 		"sound_distance": 8
@@ -49,15 +49,11 @@
 			"seat_offset": [0, 2.7, 2.4],
 			"operator_on_weapon_unit": false,
 			"rot_info": {
-				"x_rot_speed": 15,
-				"y_rot_speed": 15,
-				"x_rot_min": -5,
-				"x_rot_max": 45,
-				"y_rot_min": -30,
-				"y_rot_max": 30
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
 			},
 			"optical_sight_offset": [0, 0, 0],
-			"operator_view_offset": [0.05, -0.1, -0.2],
+			"operator_view_offset": [0.02, -0.05, -0.2],
 			"optical_sight_type": "none",
 			"zoom_max": 12,
 			"weapons": [
@@ -78,8 +74,9 @@
 			"structure_bone": "rocket",
 			"ammo_capacity": 400,
 			"is_seat": false,
+			"fire_control_sensor_type": "ccip",
 			"firing_mode": "salvo",
-			"crosshair_style": "circle",
+			"crosshair_style": "cross",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0

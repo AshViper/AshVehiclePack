@@ -4,8 +4,8 @@ function updateBones(context) {
     const rollInput = context.getRollInput()
 
     const builder = createPoseBuilder();
-    builder.setRotation("BLFlap", pitchInput * 12, 0, 0);
-    builder.setRotation("BRFlap", pitchInput * 12, 0, 0);
+    builder.setRotation("BLFlap", pitchInput * 20, 0, 0);
+    builder.setRotation("BRFlap", pitchInput * 20, 0, 0);
     builder.setRotation("group", rollInput * 20, 0, 0);
     builder.setRotation("group12", -rollInput * 20, 0, 0);
     builder.setRotation("VBFlap", 0, -yawInput * 20, 0);

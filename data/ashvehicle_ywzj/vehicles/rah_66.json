@@ -29,7 +29,7 @@
 		"impact_multiplier": 0.2
 	},
 	"physics_info": {
-		"radar_cross_section": 0.001
+		"radar_cross_section": 0.1
 	},
 	"structure_model": "ashvehicle_ywzj:vehicle/rah_66",
 	"parts": [
