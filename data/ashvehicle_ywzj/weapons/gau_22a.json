@@ -1,0 +1,21 @@
+{
+  "type": "ywzj_vehicle:cannon",
+  "name": "GAU-22/A",
+  "caliber": 25,
+  "damage": 25,
+  "velocity": 16,
+  "recoil": 0.1,
+  "headshot_multiplier": 1.5,
+  "shoot_interval": 16,
+  "max_capacity": 180,
+  "reload": {
+    "time": 100,
+    "ammo": "ywzj_vehicle:ammo_auto_cannon"
+  },
+  "explosion": {
+    "explode": true,
+    "damage": 10,
+    "radius": 0.5,
+    "destroy_block": true
+  }
+}

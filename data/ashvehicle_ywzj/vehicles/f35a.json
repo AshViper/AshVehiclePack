@@ -1,30 +1,32 @@
 {
 	"type": "ywzj_vehicle:fixed_wing_vehicle",
 	"attributes": {
-		"thrust": 0.02,
-		"thrust_k": 1.4,
+		"thrust": 0.0246,
+		"thrust_k": 1.2,
 		"ceiling": 512,
-		"x_rot_input_step": 0.2,
+		"x_rot_input_step": 0.4,
 		"y_rot_input_step": 0.5,
 		"z_rot_input_step": 0.2,
 		"air_drag_k_min": 0.002,
 		"air_drag_k_max": 0.008,
 		"lift_to_drag_k": 3,
-		"x_rot_input_drag_k": 1,
+		"x_rot_input_drag_k": 1.2,
 		"y_rot_input_drag_k": 0.25,
 		"z_rot_input_drag_k": 0.125,
 		"landing_gear_drag_k": 0.5,
 		"turn_rate_by_speed": 0.4,
-		"x_turn_rate": 2,
+		"x_turn_rate": 2.5,
 		"y_turn_rate": 3,
 		"z_turn_rate": 8,
-		"vortex_offsets": [[6, 1.5, -3], [-6, 1.5, -3]]
+		"vortex_offsets": [[5.08, 2.277, -4.05], [-5.08, 2.277, -4.05]],
+		"afterburner_offsets": [[0, 2.1, -4.6, 0.85]]
 	},
 	"landing_gear_part_id": "landing_gear",
+	"thrust_part_id": "thrust",
 	"max_health": 500,
 	"view_info": {
 		"third_person_center_offset": [0, 6, 0],
-		"third_person_distance": 20,
+		"third_person_distance": 16,
 		"third_person_center_offset_zoomed": [0, 7, 0],
 		"third_person_distance_zoomed": 4,
 		"sound_distance": 8
@@ -46,7 +48,7 @@
 			"name": "sighting_system",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "sighting_system",
-			"seat_offset": [0, 2.7, 4.7],
+			"seat_offset": [0, 2.7, 3.3],
 			"operator_on_weapon_unit": false,
 			"rot_info": {
 				"x_rot_speed": 15,
@@ -57,12 +59,13 @@
 				"y_rot_max": 30
 			},
 			"optical_sight_offset": [0, 0, 1],
-			"operator_view_offset": [0, 1.48, -2],
+			"operator_view_offset": [0.03, 1.69, -2],
 			"optical_sight_type": "crt",
-			"zoom_max": 12,
+			"zoom_max": 16,
+			"sub_part_unit_ids": ["radar"],
 			"weapons": [
 				{
-					"id": "ywzj_vehicle:auto_cannon",
+					"id": "ashvehicle_ywzj:gau_22a",
 					"part_unit_id": "auto_cannon"
 				},
 				{
@@ -70,12 +73,12 @@
 					"part_unit_id": "agm158"
 				},
 				{
-					"id": "ashvehicle_ywzj:aim120",
-					"part_unit_id": "aim120"
-				},
-				{
 					"id": "ashvehicle_ywzj:mk82",
 					"part_unit_id": "mk82"
+				},
+				{
+					"id": "ashvehicle_ywzj:aim120",
+					"part_unit_id": "aim120"
 				},
 				{
 					"id": "ywzj_vehicle:decoy_flare",
@@ -88,7 +91,7 @@
 			"name": "auto_cannon",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "auto_cannon",
-			"ammo_capacity": 200,
+			"ammo_capacity": 180,
 			"is_seat": false,
 			"crosshair_style": "circle",
 			"rot_info": {
@@ -101,8 +104,25 @@
 			"name": "agm158",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "agm158",
+			"ammo_capacity": 1,
 			"render_model": true,
 			"fire_control_sensor_type": "eo",
+			"is_seat": false,
+			"parent_weapon_unit_aim": true,
+			"crosshair_style": "square",
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			}
+		},
+		{
+			"id": "mk82",
+			"name": "mk82",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "mk82",
+			"ammo_capacity": 2,
+			"render_model": true,
+			"fire_control_sensor_type": "ccip",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -116,23 +136,11 @@
 			"name": "aim120",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "aim120",
+			"ammo_capacity": 4,
+			"cold_launch_time_tick": 5,
+			"cold_launch_velocity": [0, -1, 0],
 			"render_model": true,
 			"fire_control_sensor_type": "rf",
-			"is_seat": false,
-			"parent_weapon_unit_aim": true,
-			"crosshair_style": "none",
-			"rot_info": {
-				"x_rot_speed": 0,
-				"y_rot_speed": 0
-			}
-		},
-		{
-			"id": "mk82",
-			"name": "mk82",
-			"type": "ywzj_vehicle:weapon",
-			"structure_bone": "mk82",
-			"render_model": true,
-			"fire_control_sensor_type": "ccip",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -155,6 +163,22 @@
 			}
 		},
 		{
+			"id": "radar",
+			"name": "radar",
+			"type": "ywzj_vehicle:radar",
+			"structure_bone": "radar",
+			"is_seat": false,
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 30,
+				"y_rot_max": 60,
+				"y_rot_min": -60
+			},
+			"radar_type": "AN/APG-79",
+			"scan_sector_angle": 90,
+			"max_scan_distance": 4096
+		},
+		{
 			"id": "landing_gear",
 			"name": "landing_gear",
 			"type": "ywzj_vehicle:landing_gear",
@@ -162,12 +186,19 @@
 			"is_seat": false
 		},
 		{
-			"id": "seat",
-			"name": "seat",
-			"type": "ywzj_vehicle:generic",
-			"seat_offset": [0, 2.7, 3.2],
-			"owner_view_offset": [0, 2.7, 3.2]
+			"id": "thrust",
+			"name": "thrust",
+			"type": "ywzj_vehicle:thrust",
+			"structure_bone": "thrust",
+			"rot_info": {
+				"x_rot_speed": 5,
+				"y_rot_speed": 0,
+				"x_rot_min": -90,
+				"x_rot_max": 0,
+				"y_rot_min": 0,
+				"y_rot_max": 0
+			},
+			"is_seat": false
 		}
-	],
-	"experimental": true
+	]
 }

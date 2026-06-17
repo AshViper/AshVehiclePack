@@ -58,6 +58,10 @@
 			"zoom_max": 12,
 			"weapons": [
 				{
+					"id": "ashvehicle_ywzj:gsh_30_2",
+					"part_unit_id": "auto_cannon"
+				},
+				{
 					"id": "ashvehicle_ywzj:rocket",
 					"part_unit_id": "rocket"
 				},
@@ -66,6 +70,19 @@
 					"part_unit_id": "decoy_flare"
 				}
 			]
+		},
+		{
+			"id": "auto_cannon",
+			"name": "auto_cannon",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "auto_cannon",
+			"ammo_capacity": 250,
+			"is_seat": false,
+			"crosshair_style": "circle",
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			}
 		},
 		{
 			"id": "rocket",
@@ -101,13 +118,6 @@
 			"type": "ywzj_vehicle:landing_gear",
 			"structure_bone": "landing_gear",
 			"is_seat": false
-		},
-		{
-			"id": "seat",
-			"name": "seat",
-			"type": "ywzj_vehicle:generic",
-			"seat_offset": [0, 2.7, 3.2],
-			"owner_view_offset": [0, 2.7, 3.2]
 		}
 	]
 }
