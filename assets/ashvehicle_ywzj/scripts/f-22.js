@@ -6,7 +6,7 @@ function updateBones(context) {
     const builder = createPoseBuilder();
     builder.setRotation("BLFlap", pitchInput * 12, 0, 0);
     builder.setRotation("BRFlap", pitchInput * 12, 0, 0);
-    builder.setRotation("LFlap3", 0, 0, rollInput * 20);
+    builder.setRotation("LFlap3", 0, 0, -rollInput * 20);
     builder.setRotation("RFlap3", 0, 0, -rollInput * 20);
     builder.setRotation("VBLFlap", 0, -yawInput * 20, 0);
     builder.setRotation("VBRFlap", 0, -yawInput * 20, 0);
