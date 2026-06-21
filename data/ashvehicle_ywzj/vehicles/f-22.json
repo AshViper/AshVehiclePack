@@ -56,16 +56,24 @@
 				"x_rot_speed": 15,
 				"y_rot_speed": 15,
 				"x_rot_min": -5,
-				"x_rot_max": 45,
+				"x_rot_max": 0,
 				"y_rot_min": -30,
 				"y_rot_max": 30
 			},
 			"optical_sight_offset": [0, 0, 1],
 			"operator_view_offset": [0.05, 0.3, -2.4],
-			"optical_sight_type": "none",
-			"zoom_max": 12,
+			"optical_sight_type": "crt",
+			"zoom_max": 16,
 			"sub_part_unit_ids": ["radar"],
 			"weapons": [
+				{
+					"id": "ashvehicle_ywzj:m61",
+					"part_unit_id": "auto_cannon"
+				},
+				{
+					"id": "ashvehicle_ywzj:aim9",
+					"part_unit_id": "aim9"
+				},
 				{
 					"id": "ashvehicle_ywzj:aim120",
 					"part_unit_id": "aim120"
@@ -75,6 +83,35 @@
 					"part_unit_id": "decoy_flare"
 				}
 			]
+		},
+		{
+			"id": "auto_cannon",
+			"name": "auto_cannon",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "auto_cannon",
+			"ammo_capacity": 480,
+			"is_seat": false,
+			"crosshair_style": "circle",
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			}
+		},
+		{
+			"id": "aim9",
+			"name": "aim9",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "aim_9",
+			"ammo_capacity": 2,
+			"render_model": true,
+			"fire_control_sensor_type": "ir",
+			"is_seat": false,
+			"parent_weapon_unit_aim": true,
+			"crosshair_style": "none",
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			}
 		},
 		{
 			"id": "aim120",
