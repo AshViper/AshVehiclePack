@@ -130,6 +130,7 @@
 			"ammo_capacity": 80,
 			"is_seat": false,
 			"fire_control_sensor_type": "ccip",
+			"crosshair_style": "big_cross",
 			"firing_mode": "salvo",
 			"rot_info": {
 				"x_rot_speed": 0,

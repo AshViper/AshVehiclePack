@@ -2,7 +2,7 @@
 	"type": "ywzj_vehicle:fixed_wing_vehicle",
 	"attributes": {
 		"thrust": 0.02,
-		"thrust_k": 1.4,
+		"thrust_k": 1,
 		"ceiling": 512,
 		"x_rot_input_step": 0.2,
 		"y_rot_input_step": 0.5,
@@ -16,9 +16,9 @@
 		"landing_gear_drag_k": 0.5,
 		"turn_rate_by_speed": 0.4,
 		"x_turn_rate": 2,
-		"y_turn_rate": 3,
-		"z_turn_rate": 8,
-		"vortex_offsets": [[6, 1.5, -3], [-6, 1.5, -3]]
+		"y_turn_rate": 1.5,
+		"z_turn_rate": 3,
+		"vortex_offsets": []
 	},
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 500,
@@ -37,6 +37,9 @@
 		"damage_threshold": 10,
 		"impact_multiplier": 3
 	},
+	"physics_info": {
+		"radar_cross_section": 0.01
+	},
 	"with_warning_receiver": true,
 	"center_offset": [0, 1.625, 0],
 	"structure_model": "ashvehicle_ywzj:vehicle/f-117",
@@ -46,24 +49,27 @@
 			"name": "sighting_system",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "sighting_system",
-			"seat_offset": [0, 2.7, 4.7],
+			"seat_offset": [0, 4, 3],
 			"operator_on_weapon_unit": false,
 			"rot_info": {
-				"x_rot_speed": 15,
-				"y_rot_speed": 15,
-				"x_rot_min": -5,
-				"x_rot_max": 45,
-				"y_rot_min": -30,
-				"y_rot_max": 30
+				"x_rot_speed": 5,
+				"y_rot_speed": 5,
+				"x_rot_min": 0,
+				"x_rot_max": 80,
+				"y_rot_min": -60,
+				"y_rot_max": 60
 			},
 			"optical_sight_offset": [0, 0, 1],
-			"operator_view_offset": [0, 1.48, -2],
+			"operator_view_offset": [0.02, 2.3, -2.9],
 			"optical_sight_type": "crt",
-			"zoom_max": 12,
+			"with_stabilizer": true,
+			"with_focus_locker": true,
+			"with_thermal_imager": true,
+			"zoom_max": 16,
 			"weapons": [
 				{
-					"id": "ashvehicle_ywzj:mk82",
-					"part_unit_id": "mk82"
+					"id": "ywzj_vehicle:gbu_12",
+					"part_unit_id": "gbu_12"
 				},
 				{
 					"id": "ywzj_vehicle:decoy_flare",
@@ -72,18 +78,22 @@
 			]
 		},
 		{
-			"id": "mk82",
-			"name": "mk82",
+			"id": "gbu_12",
+			"name": "gbu_12",
 			"type": "ywzj_vehicle:weapon",
-			"structure_bone": "mk82",
+			"structure_bone": "gbu_12",
 			"render_model": true,
-			"fire_control_sensor_type": "ccip",
+			"ammo_capacity": 2,
+			"fire_control_sensor_type": "eo",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
-			"crosshair_style": "none",
 			"rot_info": {
-				"x_rot_speed": 0,
-				"y_rot_speed": 0
+				"x_rot_speed": 5,
+				"y_rot_speed": 5,
+				"x_rot_min": 0,
+				"x_rot_max": 80,
+				"y_rot_min": -60,
+				"y_rot_max": 60
 			}
 		},
 		{
@@ -105,14 +115,6 @@
 			"type": "ywzj_vehicle:landing_gear",
 			"structure_bone": "landing_gear",
 			"is_seat": false
-		},
-		{
-			"id": "seat",
-			"name": "seat",
-			"type": "ywzj_vehicle:generic",
-			"seat_offset": [0, 2.7, 3.2],
-			"owner_view_offset": [0, 2.7, 3.2]
 		}
-	],
-	"experimental": true
+	]
 }

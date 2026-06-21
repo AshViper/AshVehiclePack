@@ -28,6 +28,7 @@
 		"damage_threshold": 10,
 		"impact_multiplier": 0.2
 	},
+	"with_warning_receiver": true,
 	"physics_info": {
 		"radar_cross_section": 0.1
 	},

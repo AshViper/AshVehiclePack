@@ -1,12 +1,13 @@
 {
 	"type": "ywzj_vehicle:missile",
 	"name": "AIM-54",
-	"damage": 1100,
+	"damage": 100,
 	"headshot_multiplier": 1.5,
-	"shoot_interval": 1200,
-	"max_capacity": 4,
+	"recoil": 0.1,
+	"shoot_interval": 1000,
+	"max_capacity": 6,
 	"reload": {
-		"time": 300,
+		"time": 100,
 		"ammo": "ywzj_vehicle:ammo_missile"
 	},
 	"x_rot_max": 90,
@@ -15,10 +16,10 @@
 	"y_rot_min": -90,
 	"explosion": {
 		"explode": true,
-		"damage": 180,
-		"radius": 12,
+		"damage": 500,
+		"radius": 16,
 		"proximity_fuze": true,
-		"proximity_radius": 5,
+		"proximity_radius": 4,
 		"destroy_block": true
 	},
 	"seeker_fov": 30,

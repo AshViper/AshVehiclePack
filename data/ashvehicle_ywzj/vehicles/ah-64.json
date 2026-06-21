@@ -28,6 +28,7 @@
 		"damage_threshold": 10,
 		"impact_multiplier": 0.2
 	},
+	"with_warning_receiver": true,
 	"structure_model": "ashvehicle_ywzj:vehicle/ah-64",
 	"parts": [
 		{
