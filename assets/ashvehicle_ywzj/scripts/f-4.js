@@ -5,19 +5,19 @@ function updateBones(context) {
     const yawInput = context.getYawInput()
     const rollInput = context.getRollInput()
 
-    const builder = createPoseBuilder();
-    builder.setRotation("LPlane", pitchInput * 12, 0, 0);
-    builder.setRotation("RPlane", pitchInput * 12, 0, 0);
-    builder.setRotation("LFlap", rollInput * 16, 0, 0);
-    builder.setRotation("RFlap", -rollInput * 16, 0, 0);
-    builder.setRotation("VPlane", 0, -yawInput * 8, 0);
-    builder.setRotation("ctrl", -8 * pitchInput, 0, -8 * rollInput);
-    builder.setRotation("ctrl2", -8 * pitchInput, 0, -8 * rollInput);
+    const builder = createPoseBuilder()
+    builder.setRotation("LPlane", pitchInput * 12, 0, 0)
+    builder.setRotation("RPlane", pitchInput * 12, 0, 0)
+    builder.setRotation("LFlap", rollInput * 16, 0, 0)
+    builder.setRotation("RFlap", -rollInput * 16, 0, 0)
+    builder.setRotation("VPlane", 0, -yawInput * 8, 0)
+    builder.setRotation("ctrl", -8 * pitchInput, 0, -8 * rollInput)
+    builder.setRotation("ctrl2", -8 * pitchInput, 0, -8 * rollInput)
 
     for (let i = 0; i < aim9.length; i++) {
         if (i < aim9.length - context.getWeaponRemainAmmo("sighting_system", 1)) {
             builder.hideBone(aim9[i])
         }
     }
-    return builder;
+    return builder
 }

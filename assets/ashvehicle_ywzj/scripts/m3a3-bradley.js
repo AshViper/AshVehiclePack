@@ -1,3 +1,3 @@
 // function prepareBones() {
-//     context.rotateBone("barrel", -context.getPartXRot("turret"), 0, 0);
+//     context.rotateBone("barrel", -context.getPartXRot("turret"), 0, 0)
 // }
