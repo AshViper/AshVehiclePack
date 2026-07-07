@@ -4,21 +4,22 @@
 		"thrust": 0.02,
 		"thrust_k": 1.4,
 		"ceiling": 512,
-		"x_rot_input_step": 0.2,
+		"x_rot_input_step": 0.4,
 		"y_rot_input_step": 0.5,
 		"z_rot_input_step": 0.2,
 		"air_drag_k_min": 0.002,
 		"air_drag_k_max": 0.008,
 		"lift_to_drag_k": 3,
-		"x_rot_input_drag_k": 1,
+		"x_rot_input_drag_k": 1.2,
 		"y_rot_input_drag_k": 0.25,
 		"z_rot_input_drag_k": 0.125,
 		"landing_gear_drag_k": 0.5,
 		"turn_rate_by_speed": 0.4,
-		"x_turn_rate": 2,
+		"x_turn_rate": 2.5,
 		"y_turn_rate": 3,
 		"z_turn_rate": 8,
-		"vortex_offsets": [[6, 1.5, -3], [-6, 1.5, -3]]
+		"vortex_offsets": [[6.67, 2.303, -4.406], [-6.67, 2.303, -4.406]],
+		"afterburner_offsets": [[0, 2.35, -8, 0.9]]
 	},
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 500,
@@ -37,6 +38,9 @@
 		"damage_threshold": 10,
 		"impact_multiplier": 3
 	},
+	"physics_info": {
+		"radar_cross_section": 0.1
+	},
 	"with_warning_receiver": true,
 	"center_offset": [0, 1.625, 0],
 	"structure_model": "ashvehicle_ywzj:vehicle/f_2",
@@ -46,36 +50,31 @@
 			"name": "sighting_system",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "sighting_system",
-			"seat_offset": [0, 2.7, 4.7],
+			"seat_offset": [0, 3.5, 3.592],
 			"operator_on_weapon_unit": false,
 			"rot_info": {
 				"x_rot_speed": 15,
 				"y_rot_speed": 15,
 				"x_rot_min": -5,
-				"x_rot_max": 45,
+				"x_rot_max": 0,
 				"y_rot_min": -30,
 				"y_rot_max": 30
 			},
 			"optical_sight_offset": [0, 0, 1],
-			"operator_view_offset": [0, 1.48, -2],
+			"operator_view_offset": [0.05, 0.4, -3],
 			"optical_sight_type": "crt",
-			"zoom_max": 12,
+			"zoom_max": 16,
+			"sub_part_unit_ids": ["radar"],
 			"weapons": [
 				{
-					"id": "ywzj_vehicle:auto_cannon",
+					"id": "ashvehicle_ywzj:m61",
 					"part_unit_id": "auto_cannon"
 				},
 				{
-					"id": "ashvehicle_ywzj:aim9",
-					"part_unit_id": "aim9"
+					"part_unit_id": "variable_weapon_1"
 				},
 				{
-					"id": "ashvehicle_ywzj:aim120",
-					"part_unit_id": "aim120"
-				},
-				{
-					"id": "ashvehicle_ywzj:mk82",
-					"part_unit_id": "mk82"
+					"part_unit_id": "variable_weapon_2"
 				},
 				{
 					"id": "ywzj_vehicle:decoy_flare",
@@ -88,7 +87,7 @@
 			"name": "auto_cannon",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "auto_cannon",
-			"ammo_capacity": 200,
+			"ammo_capacity": 511,
 			"is_seat": false,
 			"crosshair_style": "circle",
 			"rot_info": {
@@ -97,49 +96,100 @@
 			}
 		},
 		{
-			"id": "aim9",
-			"name": "aim9",
+			"id": "variable_weapon_1",
+			"name": "variable_weapon_1",
 			"type": "ywzj_vehicle:weapon",
-			"structure_bone": "aim9",
-			"render_model": true,
-			"fire_control_sensor_type": "ir",
+			"structure_bone": "variable_weapon_1",
+			"render_selected_weapon": true,
 			"is_seat": false,
-			"parent_weapon_unit_aim": true,
-			"crosshair_style": "none",
-			"rot_info": {
-				"x_rot_speed": 0,
-				"y_rot_speed": 0
-			}
+			"weapons": [
+				{
+					"part_unit_id": "variable_weapon_aim_120_1"
+				},
+				{
+					"part_unit_id": "variable_weapon_aim_9"
+				}
+			]
 		},
 		{
-			"id": "aim120",
-			"name": "aim120",
+			"id": "variable_weapon_aim_120_1",
+			"name": "aim_120",
 			"type": "ywzj_vehicle:weapon",
-			"structure_bone": "aim120",
+			"structure_bone": "variable_weapon_1",
 			"render_model": true,
+			"ammo_capacity": 2,
 			"fire_control_sensor_type": "rf",
 			"is_seat": false,
-			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			},
+			"weapons": ["ashvehicle_ywzj:aim120"]
+		},
+		{
+			"id": "variable_weapon_aim_9",
+			"name": "aim_9",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "variable_weapon_1",
+			"render_model": true,
+			"ammo_capacity": 2,
+			"fire_control_sensor_type": "ir",
+			"is_seat": false,
+			"crosshair_style": "none",
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			},
+			"weapons": ["ashvehicle_ywzj:aim9"]
+		},
+		{
+			"id": "variable_weapon_2",
+			"name": "variable_weapon_2",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "variable_weapon_2",
+			"render_selected_weapon": true,
+			"is_seat": false,
+			"weapons": [
+				{
+					"part_unit_id": "variable_weapon_aim_120_2"
+				},
+				{
+					"part_unit_id": "variable_weapon_mk_82"
+				}
+			]
+		},
+		{
+			"id": "variable_weapon_aim_120_2",
+			"name": "aim_120",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "variable_weapon_2",
+			"render_model": true,
+			"ammo_capacity": 6,
+			"fire_control_sensor_type": "rf",
+			"is_seat": false,
+			"crosshair_style": "none",
+			"weapons": ["ashvehicle_ywzj:aim120"],
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			}
 		},
 		{
-			"id": "mk82",
-			"name": "mk82",
+			"id": "variable_weapon_mk_82",
+			"name": "variable_weapon_mk_82",
 			"type": "ywzj_vehicle:weapon",
-			"structure_bone": "mk82",
+			"structure_bone": "variable_weapon_2",
 			"render_model": true,
-			"fire_control_sensor_type": "ccip",
+			"ammo_capacity": 6,
 			"is_seat": false,
-			"parent_weapon_unit_aim": true,
-			"crosshair_style": "none",
+			"fire_control_sensor_type": "ccip",
+			"crosshair_style": "big_cross",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			}
+			},
+			"weapons": ["ashvehicle_ywzj:mk82"]
 		},
 		{
 			"id": "decoy_flare",
@@ -155,6 +205,22 @@
 			}
 		},
 		{
+			"id": "radar",
+			"name": "radar",
+			"type": "ywzj_vehicle:radar",
+			"structure_bone": "radar",
+			"is_seat": false,
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 30,
+				"y_rot_max": 60,
+				"y_rot_min": -60
+			},
+			"radar_type": "AN/APG-66",
+			"scan_sector_angle": 90,
+			"max_scan_distance": 4096
+		},
+		{
 			"id": "landing_gear",
 			"name": "landing_gear",
 			"type": "ywzj_vehicle:landing_gear",
@@ -165,9 +231,8 @@
 			"id": "seat",
 			"name": "seat",
 			"type": "ywzj_vehicle:generic",
-			"seat_offset": [0, 2.7, 3.2],
-			"owner_view_offset": [0, 2.7, 3.2]
+			"seat_offset": [0, 3.4, 2.9],
+			"owner_view_offset": [0, 3.6, 2.9]
 		}
-	],
-	"experimental": true
+	]
 }

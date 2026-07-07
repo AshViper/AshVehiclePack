@@ -87,7 +87,7 @@
 			"name": "auto_cannon",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "auto_cannon",
-			"ammo_capacity": 940,
+			"ammo_capacity": 511,
 			"is_seat": false,
 			"crosshair_style": "circle",
 			"rot_info": {
