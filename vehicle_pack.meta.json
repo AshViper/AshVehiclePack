@@ -7,5 +7,5 @@
 	"license": "All Rights Reserved",
 	"authors": ["Arusan", "YWZJ"],
 	"url": "",
-	"dependencies": {"ywzj_vehicle": "[0.5.6,)"}
+	"dependencies": {"ywzj_vehicle": "[0.5.7,)"}
 }
