@@ -1,0 +1,21 @@
+{
+  "type": "ywzj_vehicle:cannon",
+  "name": "27mm BK-27",
+  "caliber": 27,
+  "damage": 27,
+  "velocity": 16,
+  "recoil": 0.1,
+  "headshot_multiplier": 1.5,
+  "shoot_interval": 35,
+  "max_capacity": 150,
+  "reload": {
+    "time": 100,
+    "ammo": "ywzj_vehicle:ammo_auto_cannon"
+  },
+  "explosion": {
+    "explode": true,
+    "damage": 10,
+    "radius": 0.5,
+    "destroy_block": true
+  }
+}

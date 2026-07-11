@@ -226,13 +226,6 @@
 			"type": "ywzj_vehicle:landing_gear",
 			"structure_bone": "landing_gear",
 			"is_seat": false
-		},
-		{
-			"id": "seat",
-			"name": "seat",
-			"type": "ywzj_vehicle:generic",
-			"seat_offset": [0, 3.4, 2.9],
-			"owner_view_offset": [0, 3.6, 2.9]
 		}
 	]
 }
