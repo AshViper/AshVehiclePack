@@ -2,25 +2,32 @@
 	"name": "m_777_controller",
 	"script": "ashvehicle_ywzj:m_777",
 	"parameters": {},
-	"event_animations": {},
-	"loop_animations": {
-		"static": {
-			"animation": "static"
-		}
+	"event_animations": {
+		"m777_fire": ["shoot"]
 	},
 	"graph": {
 		"type": "merge",
 		"inputs": [
 			{
-				"type": "loop_animation",
-				"ref": "static"
-			},
-			{
 				"type": "additive",
 				"base": {
 					"type": "bone_binding",
-					"special_bindings": [],
-					"part_bindings": []
+					"part_bindings": [
+						{
+							"bone": "corpus",
+							"part": "m777",
+							"rotation_type": "y",
+							"axis": "y",
+							"invert": true
+						},
+						{
+							"bone": "6",
+							"part": "m777",
+							"rotation_type": "x",
+							"axis": "x",
+							"invert": true
+						}
+					]
 				},
 				"add": {
 					"type": "event_animation"

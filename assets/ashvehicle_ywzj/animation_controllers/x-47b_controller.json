@@ -2,29 +2,18 @@
 	"name": "x-47b_controller",
 	"script": "ashvehicle_ywzj:x-47b",
 	"parameters": {},
-	"event_animations": {},
-	"loop_animations": {
-		"static": {
-			"animation": "static"
+	"switchable_animations": {
+		"landing_gear": {
+			"part_id": "landing_gear",
+			"animation": "landing_gear"
 		}
 	},
 	"graph": {
 		"type": "merge",
 		"inputs": [
 			{
-				"type": "loop_animation",
-				"ref": "static"
-			},
-			{
-				"type": "additive",
-				"base": {
-					"type": "bone_binding",
-					"special_bindings": [],
-					"part_bindings": []
-				},
-				"add": {
-					"type": "event_animation"
-				}
+				"type": "switchable_animation",
+				"ref": "landing_gear"
 			}
 		]
 	}

@@ -5,5 +5,5 @@
 	"slot_texture": "ashvehicle_ywzj:textures/slot/m_777.png",
 	"animations": "ashvehicle_ywzj:entity/m_777.animation",
 	"animation_controller": "ashvehicle_ywzj:m_777_controller",
-	"tab_index": 1400
+	"tab_index": 0
 }

@@ -5,6 +5,13 @@
 	"slot_texture": "ashvehicle_ywzj:textures/slot/su-33.png",
 	"animations": "ashvehicle_ywzj:entity/su-33.animation",
 	"animation_controller": "ashvehicle_ywzj:su-33_controller",
+	"special_bone_effects": [
+		{
+			"bone": "group3",
+			"texture": "ashvehicle_ywzj:textures/entity/su-33.png",
+			"type": "transparent"
+		}
+	],
 	"sounds": {
 		"engine_start": "ywzj_vehicle:jet_engine_start",
 		"engine_stop": "ywzj_vehicle:jet_engine_stop",
@@ -12,5 +19,5 @@
 		"engine_thrust": "ywzj_vehicle:jet_engine_thrust",
 		"passby": "ywzj_vehicle:jet_passby"
 	},
-	"tab_index": 1322
+	"tab_index": 1354
 }

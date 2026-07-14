@@ -4,21 +4,22 @@
 		"thrust": 0.02,
 		"thrust_k": 1.4,
 		"ceiling": 512,
-		"x_rot_input_step": 0.2,
+		"x_rot_input_step": 0.4,
 		"y_rot_input_step": 0.5,
 		"z_rot_input_step": 0.2,
 		"air_drag_k_min": 0.002,
 		"air_drag_k_max": 0.008,
 		"lift_to_drag_k": 3,
-		"x_rot_input_drag_k": 1,
+		"x_rot_input_drag_k": 1.2,
 		"y_rot_input_drag_k": 0.25,
 		"z_rot_input_drag_k": 0.125,
 		"landing_gear_drag_k": 0.5,
 		"turn_rate_by_speed": 0.4,
-		"x_turn_rate": 2,
+		"x_turn_rate": 2.5,
 		"y_turn_rate": 3,
 		"z_turn_rate": 8,
-		"vortex_offsets": [[6, 1.5, -3], [-6, 1.5, -3]]
+		"vortex_offsets": [[8.629, 2.906, -6.92], [-8.629, 2.906, -6.92]],
+		"afterburner_offsets": [[1.73, 2.756, -10.873, 0.7], [-1.73, 2.756, -10.873, 0.7]]
 	},
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 500,
@@ -37,8 +38,11 @@
 		"damage_threshold": 10,
 		"impact_multiplier": 3
 	},
+	"physics_info": {
+		"radar_cross_section": 0.1
+	},
 	"with_warning_receiver": true,
-	"center_offset": [0, 1.625, 0],
+	"center_offset": [0, 2.21, 0],
 	"structure_model": "ashvehicle_ywzj:vehicle/su-57",
 	"parts": [
 		{
@@ -46,24 +50,33 @@
 			"name": "sighting_system",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "sighting_system",
-			"seat_offset": [0, 2.7, 4.7],
+			"seat_offset": [0, 4, 6.3],
 			"operator_on_weapon_unit": false,
 			"rot_info": {
 				"x_rot_speed": 15,
 				"y_rot_speed": 15,
 				"x_rot_min": -5,
-				"x_rot_max": 45,
+				"x_rot_max": 0,
 				"y_rot_min": -30,
 				"y_rot_max": 30
 			},
 			"optical_sight_offset": [0, 0, 1],
-			"operator_view_offset": [0, 1.48, -2],
+			"operator_view_offset": [0, 0, -4.8],
 			"optical_sight_type": "crt",
-			"zoom_max": 12,
+			"zoom_max": 16,
+			"sub_part_unit_ids": ["radar"],
 			"weapons": [
 				{
-					"id": "ywzj_vehicle:auto_cannon",
+					"id": "ashvehicle_ywzj:gsh_30_1",
 					"part_unit_id": "auto_cannon"
+				},
+				{
+					"id": "ashvehicle_ywzj:r73",
+					"part_unit_id": "r_73"
+				},
+				{
+					"id": "ashvehicle_ywzj:r77",
+					"part_unit_id": "r_77"
 				},
 				{
 					"id": "ywzj_vehicle:decoy_flare",
@@ -76,9 +89,37 @@
 			"name": "auto_cannon",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "auto_cannon",
-			"ammo_capacity": 200,
+			"ammo_capacity": 150,
 			"is_seat": false,
 			"crosshair_style": "circle",
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			}
+		},
+		{
+			"id": "r_73",
+			"name": "r_73",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "r_73",
+			"ammo_capacity": 2,
+			"fire_control_sensor_type": "ir",
+			"is_seat": false,
+			"crosshair_style": "none",
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			}
+		},
+		{
+			"id": "r_77",
+			"name": "r_77",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "r_77",
+			"ammo_capacity": 4,
+			"fire_control_sensor_type": "rf",
+			"is_seat": false,
+			"crosshair_style": "none",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
@@ -98,19 +139,27 @@
 			}
 		},
 		{
+			"id": "radar",
+			"name": "radar",
+			"type": "ywzj_vehicle:radar",
+			"structure_bone": "radar",
+			"is_seat": false,
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 30,
+				"y_rot_max": 60,
+				"y_rot_min": -60
+			},
+			"radar_type": "V004",
+			"scan_sector_angle": 90,
+			"max_scan_distance": 4096
+		},
+		{
 			"id": "landing_gear",
 			"name": "landing_gear",
 			"type": "ywzj_vehicle:landing_gear",
 			"structure_bone": "landing_gear",
 			"is_seat": false
-		},
-		{
-			"id": "seat",
-			"name": "seat",
-			"type": "ywzj_vehicle:generic",
-			"seat_offset": [0, 2.7, 3.2],
-			"owner_view_offset": [0, 2.7, 3.2]
 		}
-	],
-	"experimental": true
+	]
 }

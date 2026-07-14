@@ -1,7 +1,7 @@
 {
 	"type": "ywzj_vehicle:weapon",
-	"model": "ashvehicle_ywzj:entity/agm65",
-	"texture": "ashvehicle_ywzj:textures/entity/agm65.png",
+	"model": "ashvehicle_ywzj:entity/r60",
+	"texture": "ashvehicle_ywzj:textures/entity/r60.png",
 	"sounds": {
 		"fire": "ywzj_vehicle:missile_launch",
 		"reload": "ywzj_vehicle:common_reload"

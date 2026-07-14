@@ -1,12 +1,12 @@
 {
 	"type": "ywzj_vehicle:missile",
-	"name": "AGM-65 Maverick",
+	"name": "R-73",
 	"damage": 1100,
 	"headshot_multiplier": 1.5,
-	"shoot_interval": 1000,
+	"shoot_interval": 800,
 	"max_capacity": 4,
 	"reload": {
-		"time": 260,
+		"time": 100,
 		"ammo": "ywzj_vehicle:ammo_missile"
 	},
 	"x_rot_max": 90,
@@ -15,19 +15,19 @@
 	"y_rot_min": -90,
 	"explosion": {
 		"explode": true,
-		"damage": 180,
-		"radius": 12,
+		"damage": 500,
+		"radius": 8,
 		"proximity_fuze": true,
 		"proximity_radius": 4,
 		"destroy_block": true
 	},
-	"seeker_fov": 20,
-	"mass": 0.02,
-	"thrust": 0.015,
-	"motor_burn_time": 300,
+	"seeker_fov": 30,
+	"mass": 0.01,
+	"thrust": 0.01,
+	"motor_burn_time": 60,
 	"drag_coefficient": 0.005,
-	"max_g": 15,
-	"reference_speed": 1,
+	"max_g": 30,
+	"reference_speed": 0.2,
 	"guidance": "HOMING",
-	"homing_mode": "EO"
+	"homing_mode": "IR"
 }

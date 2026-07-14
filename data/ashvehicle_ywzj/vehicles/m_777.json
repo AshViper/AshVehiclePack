@@ -12,6 +12,33 @@
 		"energy_consumption_per_tick": 0.00001
 	},
 	"structure_model": "ashvehicle_ywzj:vehicle/m_777",
-	"parts": [],
-	"experimental": true
+	"parts": [
+		{
+			"id": "m777",
+			"name": "m777",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "m777",
+			"seat_offset": [-1, 1.5, 0],
+			"passenger_pose": {
+				"left_leg_rot_x": 0,
+				"right_leg_rot_x": 0
+			},
+			"fire_control_sensor_type": "ccip",
+			"crosshair_style": "cross",
+			"rot_info": {
+				"x_rot_speed": 1,
+				"y_rot_speed": 1,
+				"x_rot_max": 4,
+				"x_rot_min": -30,
+				"need_power": false
+			},
+			"optical_sight_offset": [0, 1, 1],
+			"operator_view_offset": [0, 2, 1],
+			"optical_sight_type": "operator",
+			"zoom_max": 4,
+			"weapons": [
+				"ashvehicle_ywzj:cannon_155mm"
+			]
+		}
+	]
 }
