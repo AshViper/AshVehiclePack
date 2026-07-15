@@ -2,23 +2,23 @@
 	"type": "ywzj_vehicle:vehicle_printing",
 	"materials": [
 		{
-			"count": 160,
+			"count": 200,
 			"tag": "forge:ingots/iron"
 		},
 		{
-			"count": 80,
+			"count": 82,
 			"tag": "forge:ingots/copper"
 		},
 		{
-			"count": 64,
+			"count": 68,
 			"item": "minecraft:redstone"
 		},
 		{
-			"count": 16,
+			"count": 24,
 			"item": "minecraft:glass_pane"
 		},
 		{
-			"count": 8,
+			"count": 14,
 			"item": "minecraft:dispenser"
 		},
 		{
@@ -26,7 +26,7 @@
 			"item": "minecraft:diamond"
 		},
 		{
-			"count": 16,
+			"count": 6,
 			"item": "minecraft:gold_ingot"
 		},
 		{
@@ -40,5 +40,5 @@
 			"YwzjVehicleId": "ashvehicle_ywzj:su-34"
 		}
 	},
-	"printingTime": 1200
+	"printingTime": 1350
 }

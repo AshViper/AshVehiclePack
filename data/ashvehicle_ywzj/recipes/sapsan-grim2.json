@@ -6,31 +6,31 @@
 			"tag": "forge:ingots/iron"
 		},
 		{
-			"count": 80,
+			"count": 75,
 			"tag": "forge:ingots/copper"
 		},
 		{
-			"count": 64,
+			"count": 60,
 			"item": "minecraft:redstone"
 		},
 		{
-			"count": 16,
+			"count": 10,
 			"item": "minecraft:glass_pane"
 		},
 		{
-			"count": 8,
+			"count": 10,
 			"item": "minecraft:dispenser"
 		},
 		{
-			"count": 8,
+			"count": 7,
 			"item": "minecraft:diamond"
 		},
 		{
-			"count": 16,
+			"count": 6,
 			"item": "minecraft:gold_ingot"
 		},
 		{
-			"count": 16,
+			"count": 12,
 			"item": "minecraft:lapis_lazuli"
 		}
 	],
@@ -40,5 +40,5 @@
 			"YwzjVehicleId": "ashvehicle_ywzj:sapsan-grim2"
 		}
 	},
-	"printingTime": 1200
+	"printingTime": 1150
 }
