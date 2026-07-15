@@ -1,7 +1,7 @@
 {
 	"type": "ywzj_vehicle:fixed_wing_vehicle",
 	"attributes": {
-		"thrust": 0.015,
+		"thrust": 0.022,
 		"thrust_k": 1,
 		"ceiling": 512,
 		"x_rot_input_step": 0.2,
@@ -38,6 +38,7 @@
 		"impact_multiplier": 3
 	},
 	"physics_info": {
+		"center": [0, 0, 4],
 		"radar_cross_section": 0.1
 	},
 	"with_warning_receiver": true,

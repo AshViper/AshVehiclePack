@@ -46,7 +46,10 @@
 			"optical_sight_offset": [0, 0, 0.2],
 			"operator_view_offset": [0.882, 2.182, 4.834],
 			"optical_sight_type": "crt",
-			"zoom_max": 8,
+			"with_stabilizer": true,
+			"with_focus_locker": true,
+			"with_thermal_imager": true,
+			"zoom_max": 16,
 			"weapons": [
 				{
 					"id": "ashvehicle_ywzj:m61",

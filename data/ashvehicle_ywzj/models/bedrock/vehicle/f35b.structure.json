@@ -179,6 +179,24 @@
 					]
 				},
 				{
+					"name": "weapon_barrel",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-1, 14.025, -21.925],
+							"size": [2, 2, 51.15],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [2, 2]},
+								"east": {"uv": [0, 0], "uv_size": [51.15, 2]},
+								"south": {"uv": [0, 0], "uv_size": [2, 2]},
+								"west": {"uv": [0, 0], "uv_size": [51.15, 2]},
+								"up": {"uv": [2, 51.15], "uv_size": [-2, -51.15]},
+								"down": {"uv": [2, 51.15], "uv_size": [-2, -51.15]}
+							}
+						}
+					]
+				},
+				{
 					"name": "landing_gear",
 					"pivot": [-0.8, 0, 0],
 					"cubes": [

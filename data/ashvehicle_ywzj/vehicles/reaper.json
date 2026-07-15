@@ -79,7 +79,8 @@
 			"render_model": true,
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
-			"crosshair_style": "none",
+			"fire_control_sensor_type": "eo",
+			"crosshair_style": "circle",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0

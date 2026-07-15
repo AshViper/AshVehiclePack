@@ -38,6 +38,7 @@
 		"impact_multiplier": 3
 	},
 	"uav": true,
+	"with_warning_receiver": true,
 	"center_offset": [0, 2, 0],
 	"structure_model": "ashvehicle_ywzj:vehicle/x-47b",
 	"parts": [
@@ -59,6 +60,7 @@
 			"optical_sight_offset": [0, 0, 1.5],
 			"operator_view_offset": [0, 1.48, -2],
 			"optical_sight_type": "crt",
+			"sub_part_unit_ids": ["radar"],
 			"with_stabilizer": true,
 			"with_focus_locker": true,
 			"with_thermal_imager": true,
@@ -76,7 +78,7 @@
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "missile",
 			"ammo_capacity": 4,
-			"render_model": true,
+			"fire_control_sensor_type": "rf",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -84,6 +86,21 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			}
+		},
+		{
+			"id": "radar",
+			"name": "radar",
+			"type": "ywzj_vehicle:radar",
+			"structure_bone": "radar",
+			"is_seat": false,
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 30,
+				"y_rot_max": 60,
+				"y_rot_min": -60
+			},
+			"scan_sector_angle": 90,
+			"max_scan_distance": 4096
 		},
 		{
 			"id": "landing_gear",
