@@ -5,6 +5,13 @@
 	"slot_texture": "ashvehicle_ywzj:textures/slot/rah_66.png",
 	"animations": "ashvehicle_ywzj:entity/rah_66.animation",
 	"animation_controller": "ashvehicle_ywzj:rah_66_controller",
+	"special_bone_effects": [
+		{
+			"bone": "glass",
+			"texture": "ashvehicle_ywzj:textures/entity/rah_66.png",
+			"type": "transparent"
+		}
+	],
 	"sounds": {
 		"engine_start": "ywzj_vehicle:z10_engine_start",
 		"engine_stop": "ywzj_vehicle:z10_engine_stop",

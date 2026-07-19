@@ -5,6 +5,13 @@
 	"slot_texture": "ashvehicle_ywzj:textures/slot/mig_29.png",
 	"animations": "ashvehicle_ywzj:entity/mig_29.animation",
 	"animation_controller": "ashvehicle_ywzj:mig_29_controller",
+	"special_bone_effects": [
+		{
+			"bone": "group",
+			"texture": "ashvehicle_ywzj:textures/entity/mig_29.png",
+			"type": "transparent"
+		}
+	],
 	"sounds": {
 		"engine_start": "ywzj_vehicle:jet_engine_start",
 		"engine_stop": "ywzj_vehicle:jet_engine_stop",

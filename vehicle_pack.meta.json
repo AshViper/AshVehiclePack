@@ -2,10 +2,10 @@
 	"namespace": "ashvehicle_ywzj",
 	"title": "AshVehicle",
 	"description": "It is an addon based on Limitless Vehicle",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"date": "2026-01-01",
 	"license": "All Rights Reserved",
 	"authors": ["Arusan", "YWZJ"],
-	"url": "",
+	"url": "https://github.com/AshViper/AshVehiclePack",
 	"dependencies": {"ywzj_vehicle": "[0.5.7,)"}
 }

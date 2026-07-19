@@ -5,6 +5,28 @@
 	"slot_texture": "ashvehicle_ywzj:textures/slot/uh_60.png",
 	"animations": "ashvehicle_ywzj:entity/mh_60m.animation",
 	"animation_controller": "ashvehicle_ywzj:mh_60m_controller",
+	"special_bone_effects": [
+		{
+			"bone": "glass",
+			"texture": "ashvehicle_ywzj:textures/entity/mh_60m.png",
+			"type": "transparent"
+		},
+		{
+			"bone": "door",
+			"texture": "ashvehicle_ywzj:textures/entity/mh_60m.png",
+			"type": "transparent"
+		},
+		{
+			"bone": "door2",
+			"texture": "ashvehicle_ywzj:textures/entity/mh_60m.png",
+			"type": "transparent"
+		},
+		{
+			"bone": "zaddoor2",
+			"texture": "ashvehicle_ywzj:textures/entity/mh_60m.png",
+			"type": "transparent"
+		}
+	],
 	"sounds": {
 		"engine_start": "ywzj_vehicle:z10_engine_start",
 		"engine_stop": "ywzj_vehicle:z10_engine_stop",

@@ -44,7 +44,7 @@
 				"x_rot_min": 0
 			},
 			"optical_sight_offset": [0, 0, 0.2],
-			"operator_view_offset": [0.882, 2.182, 4.834],
+			"operator_view_offset": [0.882, 2.3, 4.834],
 			"optical_sight_type": "crt",
 			"with_stabilizer": true,
 			"with_focus_locker": true,
@@ -90,13 +90,6 @@
 			}
 		},
 		{
-			"id": "door",
-			"name": "door",
-			"type": "ywzj_vehicle:door",
-			"structure_bone": "door",
-			"is_seat": false
-		},
-		{
 			"id": "landing_gear",
 			"name": "landing_gear",
 			"type": "ywzj_vehicle:landing_gear",
@@ -108,7 +101,7 @@
 			"name": "seat2",
 			"type": "ywzj_vehicle:generic",
 			"seat_offset": [-0.663, 2.7, 4.33],
-			"owner_view_offset": [-0.663, 2.7, 4.33]
+			"owner_view_offset": [-0.663, 2.8, 4.33]
 		},
 		{
 			"id": "seat3",

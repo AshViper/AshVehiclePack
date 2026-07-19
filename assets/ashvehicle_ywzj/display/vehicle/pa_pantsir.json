@@ -5,6 +5,23 @@
 	"slot_texture": "ashvehicle_ywzj:textures/slot/pa_pantsir.png",
 	"animations": "ashvehicle_ywzj:entity/pa_pantsir.animation",
 	"animation_controller": "ashvehicle_ywzj:pa_pantsir_controller",
+	"special_bone_effects": [
+		{
+			"bone": "glass",
+			"texture": "ashvehicle_ywzj:textures/entity/pa_pantsir.png",
+			"type": "transparent"
+		},
+		{
+			"bone": "DOOR",
+			"texture": "ashvehicle_ywzj:textures/entity/pa_pantsir.png",
+			"type": "transparent"
+		},
+		{
+			"bone": "DOOR2",
+			"texture": "ashvehicle_ywzj:textures/entity/pa_pantsir.png",
+			"type": "transparent"
+		}
+	],
 	"sounds": {
 		"engine_start": "ywzj_vehicle:lav150_engine_start",
 		"engine_idle": "ywzj_vehicle:truck_engine_idle",

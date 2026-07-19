@@ -58,7 +58,7 @@
 				"x_rot_min": 10,
 				"x_rot_max": 85
 			},
-			"optical_sight_offset": [0, 0, 1.5],
+			"optical_sight_offset": [0, 0, 0.2],
 			"operator_view_offset": [0.481, 2.141, 0.25],
 			"optical_sight_type": "crt",
 			"with_stabilizer": true,

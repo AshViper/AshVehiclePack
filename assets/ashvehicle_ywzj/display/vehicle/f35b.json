@@ -6,6 +6,13 @@
 	"animations": "ashvehicle_ywzj:entity/f35b.animation",
 	"animation_controller": "ashvehicle_ywzj:f35b_controller",
 	"afterburner_model": "ashvehicle_ywzj:effect/afterburner_flame",
+	"special_bone_effects": [
+		{
+			"bone": "bone30",
+			"texture": "ashvehicle_ywzj:textures/entity/f35b.png",
+			"type": "transparent"
+		}
+	],
 	"sounds": {
 		"engine_start": "ywzj_vehicle:jet_engine_start",
 		"engine_stop": "ywzj_vehicle:jet_engine_stop",

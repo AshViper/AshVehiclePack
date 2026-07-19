@@ -5,6 +5,13 @@
 	"slot_texture": "ashvehicle_ywzj:textures/slot/ah-64.png",
 	"animations": "ashvehicle_ywzj:entity/ah-64.animation",
 	"animation_controller": "ashvehicle_ywzj:ah-64_controller",
+	"special_bone_effects": [
+		{
+			"bone": "bone13",
+			"texture": "ashvehicle_ywzj:textures/entity/ah-64.png",
+			"type": "transparent"
+		}
+	],
 	"sounds": {
 		"engine_start": "ywzj_vehicle:z10_engine_start",
 		"engine_stop": "ywzj_vehicle:z10_engine_stop",

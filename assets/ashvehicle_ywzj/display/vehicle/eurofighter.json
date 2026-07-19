@@ -5,6 +5,13 @@
 	"slot_texture": "ashvehicle_ywzj:textures/slot/eurofighter.png",
 	"animations": "ashvehicle_ywzj:entity/eurofighter.animation",
 	"animation_controller": "ashvehicle_ywzj:eurofighter_controller",
+	"special_bone_effects": [
+		{
+			"bone": "CockpitHatch",
+			"texture": "ashvehicle_ywzj:textures/entity/eurofighter.png",
+			"type": "transparent"
+		}
+	],
 	"sounds": {
 		"engine_start": "ywzj_vehicle:jet_engine_start",
 		"engine_stop": "ywzj_vehicle:jet_engine_stop",
