@@ -17,8 +17,18 @@
 					"rotation": [0, 180, 0]
 				},
 				{
-					"name": "trackR",
+					"name": "suspension_left_visual",
 					"parent": "ANCHORS",
+					"pivot": [23.076275, 11.052522, 36.621592]
+				},
+				{
+					"name": "suspension_right_visual",
+					"parent": "ANCHORS",
+					"pivot": [-24.67516, 11.000208, 36.386628]
+				},
+				{
+					"name": "trackR",
+					"parent": "suspension_right_visual",
 					"pivot": [-25.00934, -1.1, 13.95057]
 				},
 				{
@@ -2499,7 +2509,7 @@
 				},
 				{
 					"name": "trackL",
-					"parent": "ANCHORS",
+					"parent": "suspension_left_visual",
 					"pivot": [22.49066, -1.1, 13.95057]
 				},
 				{
@@ -6280,7 +6290,7 @@
 				},
 				{
 					"name": "whellR",
-					"parent": "ANCHORS",
+					"parent": "suspension_right_visual",
 					"pivot": [-20.6006, 12.79137, 41.99585]
 				},
 				{
@@ -7681,7 +7691,7 @@
 				},
 				{
 					"name": "wheelL",
-					"parent": "ANCHORS",
+					"parent": "suspension_left_visual",
 					"pivot": [23.13797, 14.45747, -14.40637]
 				},
 				{

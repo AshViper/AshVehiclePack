@@ -22,10 +22,10 @@
 		"destroy_block": true
 	},
 	"seeker_fov": 20,
-	"mass": 0.004,
-	"thrust": 0.025,
+	"mass": 42.5,
+	"thrust": 106250,
 	"motor_burn_time": 200,
-	"drag_coefficient": 0.005,
+	"drag_coefficient": 0.2125,
 	"max_g": 15,
 	"reference_speed": 3,
 	"guidance": "SACLOS"

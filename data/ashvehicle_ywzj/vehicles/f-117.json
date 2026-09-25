@@ -1,14 +1,14 @@
 {
 	"type": "ywzj_vehicle:fixed_wing_vehicle",
 	"attributes": {
-		"thrust": 0.02,
+		"thrust": 94300,
 		"thrust_k": 1,
 		"ceiling": 512,
 		"x_rot_input_step": 0.2,
 		"y_rot_input_step": 0.5,
 		"z_rot_input_step": 0.2,
-		"air_drag_k_min": 0.002,
-		"air_drag_k_max": 0.008,
+		"air_drag_k_min": 26.76,
+		"air_drag_k_max": 107.04,
 		"lift_to_drag_k": 3,
 		"x_rot_input_drag_k": 1,
 		"y_rot_input_drag_k": 0.25,
@@ -19,6 +19,11 @@
 		"y_turn_rate": 1.5,
 		"z_turn_rate": 3,
 		"vortex_offsets": []
+	},
+	"physics_info": {
+		"mass": 13380,
+		"friction": 26760,
+		"radar_cross_section": 0.01
 	},
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 500,
@@ -36,9 +41,6 @@
 	"defense_stats": {
 		"damage_threshold": 10,
 		"impact_multiplier": 3
-	},
-	"physics_info": {
-		"radar_cross_section": 0.01
 	},
 	"with_warning_receiver": true,
 	"center_offset": [0, 1.625, 0],

@@ -20,10 +20,10 @@
 		"radius": 8,
 		"destroy_block": true
 	},
-	"mass": 0.01,
-	"thrust": 0.004,
+	"mass": 1020,
+	"thrust": 163200,
 	"motor_burn_time": 600,
-	"drag_coefficient": 0.005,
+	"drag_coefficient": 5.1,
 	"max_g": 30,
 	"reference_speed": 1,
 	"guidance": "HOMING"

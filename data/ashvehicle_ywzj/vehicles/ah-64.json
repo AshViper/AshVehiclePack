@@ -1,7 +1,7 @@
 {
 	"type": "ywzj_vehicle:rotary_wing_vehicle",
 	"attributes": {
-		"main_rotor_force": 0.042,
+		"main_rotor_force": 99128.96,
 		"ceiling": 256,
 		"x_rot_speed_acceleration": 1,
 		"x_rot_speed_max": 3,
@@ -10,6 +10,10 @@
 		"z_rot_speed_acceleration": 1,
 		"z_rot_speed_max": 3,
 		"max_air_speed": 1.8
+	},
+	"physics_info": {
+		"mass": 5165,
+		"friction": 10330
 	},
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 300,

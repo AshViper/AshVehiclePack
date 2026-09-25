@@ -1,5 +1,7 @@
 {
 	"type": "ywzj_vehicle:aerial_bomb",
+	"drag_coefficient": 1.135,
+	"mass": 227,
 	"name": "Mk 82 Bomb",
 	"damage": 10,
 	"velocity": 0,

@@ -1,6 +1,10 @@
 {
 	"type": "ywzj_vehicle:generic",
 	"attributes": {},
+	"physics_info": {
+		"mass": 4200,
+		"friction": 8400
+	},
 	"max_health": 100,
 	"view_info": {
 		"third_person_center_offset": [0, 2, 0],

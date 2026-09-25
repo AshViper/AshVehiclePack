@@ -1,5 +1,7 @@
 {
 	"type": "ywzj_vehicle:aerial_bomb",
+	"drag_coefficient": 0.15,
+	"mass": 30,
 	"name": "Toilet Bomb",
 	"damage": 10,
 	"velocity": 0,

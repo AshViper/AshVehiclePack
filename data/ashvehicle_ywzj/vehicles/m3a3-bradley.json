@@ -9,6 +9,12 @@
 		"turn_acceleration": 1,
 		"max_turn": 2
 	},
+	"physics_info": {
+		"mass": 32940,
+		"friction": 65880,
+		"can_destroy_block": true,
+		"suspension_response": 0.3
+	},
 	"max_health": 1500,
 	"view_info": {
 		"third_person_center_offset": [0, 3, 0],
@@ -18,9 +24,6 @@
 	"energy_info": {
 		"energy_capacity": 1,
 		"energy_consumption_per_tick": 0.00001
-	},
-	"physics_info": {
-		"can_destroy_block": true
 	},
 	"structure_model": "ashvehicle_ywzj:vehicle/m3a3-bradley",
 	"parts": [
@@ -121,6 +124,34 @@
 			"type": "ywzj_vehicle:door",
 			"structure_bone": "door",
 			"is_seat": false
+		},
+		{
+			"id": "suspension_left",
+			"name": "suspension_left",
+			"type": "ywzj_vehicle:suspension",
+			"render_bone": "suspension_left_visual",
+			"structure_bone": "suspension_left",
+			"is_seat": false,
+			"spring_stiffness": 461160.0,
+			"damping": 7905.6,
+			"rest_length": 0.1,
+			"max_compression": 0.1,
+			"max_extension": 0.1,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_right",
+			"name": "suspension_right",
+			"type": "ywzj_vehicle:suspension",
+			"render_bone": "suspension_right_visual",
+			"structure_bone": "suspension_right",
+			"is_seat": false,
+			"spring_stiffness": 461160.0,
+			"damping": 7905.6,
+			"rest_length": 0.1,
+			"max_compression": 0.1,
+			"max_extension": 0.1,
+			"max_droop": 0.1
 		}
 	]
 }
